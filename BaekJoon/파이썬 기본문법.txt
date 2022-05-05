@@ -1,0 +1,17 @@
+
+map(int, input().split())
+lans = list[int(sys.stdin.readline()) for _ in range(K)] //여러 줄로 하나씩 받을 떄
+list(map(int,sys.stdin.readline().split())) 한 줄에 여러개
+
+
+문자열, 리스트 내에 포함하는지 in, not in
+
+ord(~) --> 아스키코드 변환
+
+num[i:j] --> 문자열에서 캐릭터 추출
+
+list에서 +와 append extend
++는 list가 개별 요소로 들어가고 append와 extend는 리스트  자체로 안으로 들어감
+append가 더 빠르니 개별 항목은 append, list를 이을 땐 +=
+
+del arr[?] -> 리스트에서 제거

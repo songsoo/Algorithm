@@ -17,5 +17,6 @@ def binarySearch(min,max):
 
 print(binarySearch(1,max(lans)))
 
-
+# 가장 큰 것 기준으로 자르기
+# binary search로 구하기
 

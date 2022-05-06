@@ -1,3 +1,17 @@
-test_Arr = [1,1,2,3,4,5,5,5,5,5,5,5]
+from collections import deque
 
-print(test_Arr.count(max(test_Arr)))
+test_Arr = [1,2,3,4,5,6]
+test_Arr2 = test_Arr
+test_Arr3= test_Arr.copy()
+test_Arr[0] = 10
+print(test_Arr,test_Arr2,test_Arr3)
+
+deq = deque()
+deq = deque(test_Arr)
+deq.rotate(1)
+print(list(deq))
+for i in deq:
+    print(i)
+
+del deq[0]
+print(deq)

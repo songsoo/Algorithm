@@ -3,7 +3,6 @@ map(int, input().split())
 lans = list[int(sys.stdin.readline()) for _ in range(K)] //여러 줄로 하나씩 받을 떄
 list(map(int,sys.stdin.readline().split())) 한 줄에 여러개
 
-
 문자열, 리스트 내에 포함하는지 in, not in
 
 ord(~) --> 아스키코드 변환
@@ -14,4 +13,30 @@ list에서 +와 append extend
 +는 list가 개별 요소로 들어가고 append와 extend는 리스트  자체로 안으로 들어감
 append가 더 빠르니 개별 항목은 append, list를 이을 땐 +=
 
-del arr[?] -> 리스트에서 제거
+리스트 값 제거
+del arr[?] -> ?번째 인덱스 제거
+remove arr[?] -> ?라는 값 제거
+
+-deque (Double Ended Queue)
+    큐와 스택을 모두 만들 수 있는 자료구조, 양 끝단에서 push(), pop()모두 가능
+    사용법
+        from collection import deque
+        queue = deque()
+
+        queue.append()
+        queue.appendleft()
+        queue.pop()
+        queue.popleft()
+        queue.rotate(num) --> num만큼 회전, 양수 오른 음수 왼
+
+        deq = deque(list)
+        list(deq)
+
+a[::3] --> 3배폭으로 가져옴
+a[10:1:-1],a[::-1] --> 반대 순서로 가져옴
+a[-1] --> 맨 마지막 리스트 가져옴
+a[slice(4,7)] --> 4,5,6 가져옴 (slice는 변수화하여 사용 가능)
+
+b = a.copy() --> deepcopy, 주소가 아닌 배열 자체 복사
+
+arr = [i for i in range(N)]

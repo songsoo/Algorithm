@@ -1,3 +1,7 @@
+
+for i in range(5,0,-1):
+    print(i)
+"""
 from collections import deque
 
 test_Arr = [1,2,3,4,5,6]
@@ -15,3 +19,4 @@ for i in deq:
 
 del deq[0]
 print(deq)
+"""
